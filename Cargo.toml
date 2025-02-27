@@ -1,0 +1,14 @@
+[package]
+name = "sql_job"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.38"
+clap = { version = "4.5.7", features = ["derive"] }
+dotenv = "0.15.0"
+rust_decimal = "1.35.0"
+sqlx = { version = "0.7.4", features = ["postgres", "runtime-tokio", "time", "rust_decimal", "chrono"] }
+tokio = { version = "1.38.0", features = ["rt", "macros", "rt-multi-thread"] }
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
